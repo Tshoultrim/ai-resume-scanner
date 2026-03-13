@@ -1,0 +1,26 @@
+{
+"name": "drukoptix-ai",
+  "private": true,
+  "version": "1.0.0",
+  "homepage": "https://Tshoultrim.github.io/drukoptix-ai", 
+  "scripts": {
+    "dev": "vite.cmd",
+    "build": "vite.cmd build",
+    "preview": "vite.cmd preview",
+    "start": "npm run dev",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages.cmd -d dist"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.2.1",
+    "@vitejs/plugin-react": "^6.0.0",
+    "autoprefixer": "^10.4.27",
+    "postcss": "^8.5.8",
+    "tailwindcss": "^4.2.1"
+  },
+  "dependencies": {
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4",
+    "react-router-dom": "^7.13.1"
+  }
+}
