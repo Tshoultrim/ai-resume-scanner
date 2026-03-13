@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import { HashRouter as Router, Routes, Route } from 'react-router-dom'  // Change this line
 import Header from './components/Header'
 import Navigation from './components/Navigation'
 import Footer from './components/Footer'
@@ -9,8 +9,8 @@ import PrivacyPolicy from './pages/PrivacyPolicy'
 
 function App() {
   return (
-    // Update the basename to match your new repo name
-    <Router basename="/drukoptix-ai">
+    // Remove the basename prop - HashRouter doesn't need it
+    <Router>
       {/* Add a subtle overlay to enhance glass effect */}
       <div className="fixed inset-0 bg-black/20 pointer-events-none z-0"></div>
       
